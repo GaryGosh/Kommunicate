@@ -8,12 +8,12 @@ function Search({ user }) {
     let filterData = user.filter((user) => (
       user.first_name.toLowerCase().includes(val.toLowerCase())
     ));
-    setFilteredItem(filterData)
+    setFilteredItem(filterData);
   };
-  console.log('filter', filteredItem);
+  /* console.log('filter', filteredItem); */
   return (
     <div>
-      <input type="text" placeholder="Search user" onChange={searchUSer} />
+      <div className="search"><input type="text" placeholder="Search user" onChange={searchUSer} /></div>
       {filteredItem?.map(({avatar, id, first_name, last_name, email}) => (
                 <tr>
                     <td><img src={avatar} alt="user dp"/></td>

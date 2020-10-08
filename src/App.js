@@ -5,7 +5,7 @@ import Table from './Table';
 function App() {
   return (
     <div className="App">
-      <h1>User Data</h1>
+      <div className="header"><h1>User Data</h1></div>
       
       <Table />
     </div>

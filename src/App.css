@@ -1,7 +1,45 @@
+.App {
+  background: #A1FFCE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.header > h1 {
+  background-color: #3490dc;
+  padding: 0.5em;
+  box-shadow: 4px 8px 6px -4px black;
+}
 
 .table td {
   border: 1px solid lightsalmon;
   min-width: 7em;
   text-align: center;
   
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  height: 2em;
+  margin-bottom: 1.5em;
+}
+
+.search > input {
+  width: 16em;
+}
+
+.search > input:focus {
+  background-color: #6ffcee;
+}
+
+.table {
+  width:70%; 
+  margin-left:15%; 
+  margin-right:15%;
 }
